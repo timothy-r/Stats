@@ -1,5 +1,7 @@
 @extends('layout')
 
 @section('content')
-    Users!
-@stop
+    @foreach($users as $user)
+        <p>{{ $user->name }}</p>
+    @endforeach
+@stop;
