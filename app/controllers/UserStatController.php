@@ -7,4 +7,7 @@ class UserStatController extends BaseController {
 		return 'user stats';
 	}
 
+    public function postEvent()
+    {
+    }
 }
