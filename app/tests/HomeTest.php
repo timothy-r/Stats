@@ -3,11 +3,9 @@
 class ExampleTest extends TestCase {
 
 	/**
-	 * A basic functional test example.
-	 *
 	 * @return void
 	 */
-	public function testBasicExample()
+	public function testCanGetHomePage()
 	{
 		$crawler = $this->client->request('GET', '/');
 

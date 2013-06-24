@@ -5,13 +5,13 @@
 */
 class UserStatControllerTest extends TestCase {
 
-    public function testGetIndex()
+    public function testCanGetIndex()
     {
 		$crawler = $this->client->request('GET', '/user-stats');
 		$this->assertTrue($this->client->getResponse()->isOk());
     }
 
-    public function testPostEvent()
+    public function testCanPostEvent()
     {
 		$crawler = $this->client->request('POST', '/user-stats/event');
 		$this->assertTrue($this->client->getResponse()->isOk());

@@ -1,5 +1,7 @@
 <?php
-
+/**
+* A restful api to add and retrieve User events 
+*/
 class UserStatController extends BaseController {
 
 	public function getIndex()
@@ -9,5 +11,8 @@ class UserStatController extends BaseController {
 
     public function postEvent()
     {
+        // create a new UserStat instace
+        // set the url and event properties
+        // persist the UserStat
     }
 }
