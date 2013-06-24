@@ -11,8 +11,14 @@ class UserStatController extends BaseController {
 
     public function postEvent()
     {
-        // create a new UserStat instace
+        $event = json_decode(Input::get('event'));
+        // create a new UserStat instance
+        $user_stat = new UserStat;
         // set the url and event properties
+        $user_stat->url = $event->url;
+        $user_stat->event = $event->event;
         // persist the UserStat
+        $user_stat->save();
+        // return success response
     }
 }
