@@ -28,7 +28,8 @@ $app->redirectIfTrailingSlash();
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('your-machine-name'),
+	'development' => array('stats.ace.com'),
+	'production' => array('stats.timjr.net'),
 
 ));
 

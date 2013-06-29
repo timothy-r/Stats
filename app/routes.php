@@ -23,4 +23,7 @@ Route::get('users', function()
 
 });
 
+/**
+* @todo add validation filters
+*/
 Route::controller('user-stats', 'UserStatController');
