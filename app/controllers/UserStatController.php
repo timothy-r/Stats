@@ -10,11 +10,12 @@ class UserStatController extends BaseController {
     }
 
     /**
-    * @todo return a list of events
+    * @todo show a list of event results
     */
 	public function getIndex()
 	{
-		return 'user stats index page';
+        $stats = UserStat::all();
+        return View::make('user-stats')->with('stats', $stats);
 	}
 
     /**

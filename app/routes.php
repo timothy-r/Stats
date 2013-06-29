@@ -23,6 +23,13 @@ Route::get('users', function()
 
 });
 
+Route::get('user-events', function()
+{
+    $stats = UserStat::all();
+    return View::make('user-stats')->with('stats', $stats);
+    
+});
+
 /**
 * @todo add validation filters
 */
