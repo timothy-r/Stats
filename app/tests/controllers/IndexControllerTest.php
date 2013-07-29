@@ -1,7 +1,7 @@
 <?php
 
-class ExampleTest extends TestCase {
-
+class IndexControllerTest extends TestCase
+{
 	/**
 	 * @return void
 	 */
